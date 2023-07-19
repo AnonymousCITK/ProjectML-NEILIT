@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h1>Enter Data for Heart Disease Dataset</h1>
+    <form action="/predict" method="post">
+        <label for="age">AGE: </label>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <label for="sex">SEX: </label>
+        <select name="sex" required>
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select><br><br>
+
+        <label for="cp">CHEST PAIN TYPE: </label>
+		<select name="cp" required>
+			<option value="0">Typical Angina</option>
+			<option value="1">Atypical Angina</option>
+			<option value="2">Non-Anginal Pain</option>
+			<option value="3">Asymptomatic</option>
+		</select><br><br>
+		
+		<label for="trestbps">RESTING BLOOD PRESSURE: </label>
+		<input type="number" name="trestbps" requiredd><br><br>
+		
+		<label for="chol">CHOLESTEROL LEVEL: </label>
+		<input type="number" name="chol" required><br><br>
+		
+		<label for="fbs">FASTING BLOOD SUGAR: </label>
+        <select name="fbs" required>
+            <option value="0">Doesn't Have</option>
+            <option value="1">Have</option>
+        </select><br><br>
+		
+		<label for="restecg">RESTING ELECTROCARDIOGRAPHIC RESULTS: </label>
+        <select name="restecg" required>
+            <option value="0">Normal</option>
+            <option value="1">Having ST-T Wave Abnormality</option>
+            <option value="2">Definite Left Ventricular Hypertrophy</option>
+        </select><br><br>
+		
+		<label for="thalach">HEART RATE DURING EXERCISE: </label>
+        <input type="number" name="thalach" required><br><br>
+		
+		<label for="exang">EXERCISE-INDUCED ANGINA: </label>
+        <select name="exang" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+		
+		<label for="oldpeak">ST DEPRESSION INDUCED BY EXERCISE: </label>
+        <input type="number" name="oldpeak" required><br><br>
+		
+		<label for="slope">SLOPE OF THE EXERCISE: </label>
+        <select name="slope" required>
+            <option value="1">Upsloping</option>
+            <option value="2">Flat</option>
+            <option value="3">Downsloping</option>
+        </select><br><br>
+		
+		<label for="ca">VESSELS COLORED BY FLUOROSCOPY: </label>
+		<select name="ca" required>
+			<option value="0">Typical Angina</option>
+			<option value="1">Atypical Angina</option>
+			<option value="2">Non-Anginal Pain</option>
+			<option value="3">Asymptomatic</option>
+			<option value="4">Asymptomatic</option>
+		</select><br><br>
+		
+		<label for="thal">THALASSEMIA: </label>
+		<select name="thal" required>
+			<option value="0">Typical Angina</option>
+			<option value="1">Atypical Angina</option>
+			<option value="2">Non-Anginal Pain</option>
+			<option value="3">Asymptomatic</option>
+		</select><br><br>
+		
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+</body>
+</html>
